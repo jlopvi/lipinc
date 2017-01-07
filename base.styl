@@ -1,0 +1,125 @@
+@import 'nib'
+blue = #1077BD	
+gray = #999999
+blackl = #3D434A
+body
+	background #E8ECF1
+	margin 0
+	font-family Roboto, 'sans-serif'
+hr
+	border-bottom 2px solid #1077BD
+	
+.headerApp
+	width 100%
+	height 100vh
+	background #f9f
+	position relative
+	&-content
+		background tran
+		width 100%
+		height 100%
+		margin 0 auto
+		display flex
+		flex-direction column
+		justify-content center
+		align-items: center
+		position relative
+		z-index 2
+	&-title
+		color white
+		text-shadow 0 0 5px black
+		font-size 3em
+		margin 0
+	&-form
+		background rgba(white,1)
+		border-radius 2px
+		padding 1em
+		box-shadow 0px 0px 10px rgba(black, .4)
+		width 100%
+		max-width 400px
+		.form
+			&-input
+				border none
+				border-bottom 1px solid #999999
+				font-size 1.2em
+				background rgba(white,.2)
+				color #3D434A
+				padding 0
+				margin-top 1em
+				&::-webkit-input-placeholder
+					color: #999999;
+					font-size 1.2em
+					padding 0
+					line-height 50px
+				
+			&-text
+				color #3D434A
+				font-weight lighter
+				text-align center
+				margin 0
+				font-size 1.8em
+			
+				
+.bg-run
+	background transparent
+	width 100%
+	position absolute
+	left 0
+	top 0
+	bottom 0
+	right 0
+	z-index 0
+	overflow hidden
+	&--img
+		width 100%
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		animation scalebg 60s infinite alternate
+	&:after
+		content ""
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		background-image url('../img/bg/pttrn.png')
+		background-size 5px
+		background-repeat repeat
+		
+.form
+	&-input
+		display block
+		margin .5em auto
+		width 100%
+		line-height 2em
+	&-btn
+		margin 1em 0
+		border none
+		padding 1em
+		display block
+		display block
+		width 100%
+		max-width 200px
+		
+.btn	
+	text-align center
+	border 2px solid gray
+	background transparent
+	color gray
+	font-weight bold
+	text-transform uppercase
+	font-size 1em
+	
+
+	
+
+@keyframes scalebg
+	from 
+		transform scale(1)
+	to
+		transform scale(1.5)
+		
+ 	
